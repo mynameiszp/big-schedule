@@ -2,9 +2,13 @@
     /*font-family: Comic Sans MS, Comic Sans, cursive;*/
     font-family: Times, Times New Roman, serif;
     line-height: 2;
+    padding: 0;
 }
 
-
+div#app{
+    padding: 0;
+    max-width: 100%;
+}
 body {
     margin: 0;
     padding: 0;

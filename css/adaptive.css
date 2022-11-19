@@ -2,6 +2,13 @@
 @media only screen and (max-width: 1200px) {
     /* */
 }
+@media (min-width: 1024px){
+    #app {
+        display: unset;
+}
+}
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
     h3 {
