@@ -1,0 +1,87 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    .item {
+        flex-basis: calc(85% / 2 - 20px * 2);
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    h3 {
+        font-size: 14px;
+    }
+
+    .item {
+        flex-basis: calc(85% / 1 - 5px * 2);
+        margin: 5px;
+    }
+
+    .container {
+        margin-left: 23%;
+    }
+
+    .sidebar {
+        width: 18%;
+        padding-left: 0;
+
+    }
+
+    .sidebar-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .content form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .sidebar {
+        width: 22%;
+    }
+
+    .container {
+        margin-left: 28%;
+    }
+
+    .footer-site {
+        display: block;
+        text-align: center;
+        /*margin-left: 18%;*/
+        padding-right: 0;
+        justify-content: flex-start;
+        width: 100%;
+
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    /* */
+}
+
+/*# sourceMappingURL=adaptive.css.map */

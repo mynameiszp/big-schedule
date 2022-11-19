@@ -1,0 +1,277 @@
+* {
+    /*font-family: Comic Sans MS, Comic Sans, cursive;*/
+    font-family: Times, Times New Roman, serif;
+    line-height: 2;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    background-color: #c2e9f8;
+    box-shadow: 0 3px 6px paleturquoise;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.card {
+    background: #9dcbcb;
+}
+
+.card-header, .card-footer {
+    background: wheat;
+}
+
+.footer div div div {
+    color: black;
+    background: #c2e9f8;
+    text-align: center;
+}
+
+.footer div h5 {
+    font-weight: bold;
+    padding-top: 8px;
+}
+.footer dl  dd{
+    color: #100e0e;
+}
+
+hr {
+    background-color: #9b9b9b;
+}
+
+
+/*FAQ CSS*/
+
+.box {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.box .heading {
+    background: #a44ae5;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.faqs {
+    padding: 0 20px 20px;
+}
+
+.text-faq {
+    margin-top: 20px;
+    color: blue;
+}
+
+.question-faq {
+    font-size: 16px;
+
+}
+
+details {
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.iframe {
+    padding: 20px;
+}
+
+table {
+    border: 1px solid grey;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #bbeeee;
+}
+
+th, td {
+    border: 2px solid #100e0e;
+    padding: 5px 10px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    /*margin: 0 10%;*/
+}
+
+
+/*REGISTRATION AND LOGIN HTML*/
+
+.registration-box {
+    max-width: 700px;
+    width: 100%;
+    background-color: lavender;
+    padding: 25px 30px;
+    border-radius: 10%;
+    box-shadow: 12px 10px 6px gray;
+    border: 2px dashed gray;
+    margin: 20px auto;
+}
+
+.registration-box h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details input[type = "text"], .user-details input[type = "password"], .user-details select, .user-details input[type = "date"] {
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 6px;
+    width: 80%;
+    outline: none;
+    /*color: black;*/
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+.user-details input[type = "text"]:focus, .user-details input[type = "password"]:focus, .user-details input[type = "date"]:focus {
+    width: 100%;
+    border-color: #03dbf8;
+}
+
+form .button input[type = "submit"] {
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid #22dc71;
+    padding: 14px 40px;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 50%;
+}
+
+form input[type = "submit"]:hover {
+    background: #1ce571;
+}
+
+
+.box-login {
+    width: 350px;
+    /*width: auto;*/
+    padding: 40px;
+    top: 40%;
+    left: 50%;
+    align-self: center;
+    background: lavender;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 12px 10px 6px gray;
+    border: 2px dashed gray;
+    margin: 20px auto;
+}
+
+.box-login h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.box-login input[type = "text"], .box-login input[type = "password"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 180px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box-login input[type = "text"]:focus, .box-login input[type = "password"]:focus {
+    width: 250px;
+    border-color: limegreen;
+}
+
+.box-login input[type = "submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #22dc71;
+    padding: 14px 40px;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box-login input[type = "submit"]:hover {
+    background: #1ce571;
+}
+
+/*input ._error {*/
+/*    border: 3px solid #c51717;*/
+/*    box-shadow: #c51717 20px 20px;*/
+/*}*/
+.input-box.success input, .input-box.success select {
+    border-color: #2ecc71;
+    width: 100%;
+}
+
+.input-box.error input, .input-box.error select {
+    border-color: #e74c3c;
+    /*width: 100%;*/
+}
+
+.input-box small {
+    color: #003cff;
+    /*visibility: hidden;*/
+}
+
+.input-box.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.input-box.success small {
+    color: #02ad4a;
+    visibility: visible;
+}
+
+
+
