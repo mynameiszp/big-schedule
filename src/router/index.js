@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router/dist/vue-router.esm-bundler'
 import Home from '../components/Home.vue'
-import Test from '../components/Test.vue'
+import FAQ from '../components/FAQ.vue'
+import Students from '../components/Students.vue'
+import Students_ADD from '../components/Students_add.vue'
+
+
 
 const routes = [
     {
@@ -8,8 +12,16 @@ const routes = [
         component: Home
     },
     {
-        path: '/test',
-        component: Test
+        path: '/faq',
+        component: FAQ
+    },
+    {
+        path: '/students',
+        component: Students
+    },
+    {
+        path: '/addstudent',
+        component: Students_ADD
     }
 ]
 

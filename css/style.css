@@ -101,18 +101,18 @@ details {
     padding: 20px;
 }
 
-table {
-    border: 1px solid grey;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    background-color: #bbeeee;
-}
+/*table {*/
+/*    border: 1px solid grey;*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    text-align: center;*/
+/*    background-color: #bbeeee;*/
+/*}*/
 
-th, td {
-    border: 2px solid #100e0e;
-    padding: 5px 10px;
-}
+/*th, td {*/
+/*    border: 2px solid #100e0e;*/
+/*    padding: 5px 10px;*/
+/*}*/
 
 .table-responsive {
     overflow-x: auto;
@@ -267,7 +267,7 @@ form input[type = "submit"]:hover {
     /*visibility: hidden;*/
 }
 
-.input-box.error small {
+.error {
     color: #e74c3c;
     visibility: visible;
 }
@@ -276,6 +276,7 @@ form input[type = "submit"]:hover {
     color: #02ad4a;
     visibility: visible;
 }
+
 
 
 

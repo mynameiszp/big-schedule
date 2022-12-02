@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto">
             <router-link to="/" class="nav-item nav-link" >Головна</router-link>
-            <router-link to="/test" class="nav-item nav-link" >Аккаунт</router-link>
-            <router-link to="/test" class="nav-item nav-link" >Новини</router-link>
-            <router-link to="/test" class="nav-item nav-link" >Питання</router-link>
-            <router-link to="/test" class="nav-item nav-link" >Таблиця</router-link>
+            <router-link to="/faq" class="nav-item nav-link" >Аккаунт</router-link>
+            <router-link to="/faq" class="nav-item nav-link" >Новини</router-link>
+            <router-link to="/faq" class="nav-item nav-link" >Питання</router-link>
+            <router-link to="/faq" class="nav-item nav-link" >Таблиця</router-link>
           </div>
         </div>
       </div>
