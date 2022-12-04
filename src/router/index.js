@@ -13,6 +13,9 @@ import Groups_ADD from '../components/entities/groups/Groups_add.vue'
 import Faculties from '../components/entities/faculties/Faculties.vue'
 import Faculties_ADD from '../components/entities/faculties/Faculties_add.vue'
 import Faculties_EDIT from '../components/entities/faculties/Faculties_edit.vue'
+import Teachers from '../components/entities/teachers/Teachers.vue'
+import Teachers_ADD from '../components/entities/teachers/Teachers_add.vue'
+import Teachers_EDIT from '../components/entities/teachers/Teachers_edit.vue'
 
 const routes = [
     {
@@ -70,6 +73,18 @@ const routes = [
     {
         path: '/editfaculty',
         component: Faculties_EDIT
+    },
+    {
+        path: '/teachers',
+        component: Teachers
+    },
+    {
+        path: '/addteacher',
+        component: Teachers_ADD
+    },
+    {
+        path: '/editteacher',
+        component: Teachers_EDIT
     }
 ]
 

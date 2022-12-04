@@ -25,6 +25,17 @@
                  @input="checkPhone">
           <small v-if="errors.phone" class="error">{{ msg.phone }}</small>
         </div>
+        <div class="form-group mb-4">
+          <label for="student-email">Group-id*</label>
+          <select name="" id="group" class="form-select" v-model="group" @change="checkGroup">
+            <option value="">Оберіть</option>
+            <option value="ІА-11">ІА-11</option>
+            <option value="ІА-12">ІА-12</option>
+            <option value="ІА-13">ІА-13</option>
+            <option value="ІА-14">ІА-14</option>
+          </select>
+          <small v-if="errors.group" class="error">{{msg.group}}</small>
+        </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -47,6 +58,7 @@ export default defineComponent({
     //змінні компонету
     studentName: '',
     phone: '',
+    group: '',
     email: '',
     msg: [],
     errors: {
@@ -64,7 +76,8 @@ export default defineComponent({
       this.checkName();
       this.validateEmail();
       this.checkPhone();
-      if (!this.errors.studentName && !this.errors.phone && !this.errors.email) {
+      this.checkGroup();
+      if (!this.errors.studentName && !this.errors.phone && !this.errors.email && !this.errors.group) {
         alert("Ваші дані прийнято та успішно зареєстровано")
         this.clearForm();
       } else {
@@ -75,16 +88,17 @@ export default defineComponent({
       this.studentName = '';
       this.email = '';
       this.phone = '';
+      this.group = '';
 
     },
 
     checkName() {
       if (this.studentName.length === 0) {
         this.errors.studentName = true;
-        this.msg['facultyName'] = 'Прізвище не може бути пустим';
+        this.msg['teacherName'] = 'Прізвище не може бути пустим';
       } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.studentName)) {
         this.errors.studentName = true;
-        this.msg['facultyName'] = 'Прізвище тільки українською';
+        this.msg['teacherName'] = 'Прізвище тільки українською';
       } else {
         this.errors.studentName = false;
       }
@@ -100,16 +114,24 @@ export default defineComponent({
         this.errors.phone = false;
       }
     },
+    checkGroup() {
+      if (this.group.valueOf() === '') {
+        this.errors.group = true;
+        this.msg['group'] = 'Оберіть групу';
+      } else {
+        this.errors.group = false;
+      }
+    },
     validateEmail() {
       if (this.email.length === 0) {
         this.errors.email = true;
-        this.msg['course'] = 'Пусто';
+        this.msg['email'] = 'Пусто';
       } else if (!/\S+@\S+\.\S+/.test(this.email)) {
         this.errors.email = true;
-        this.msg['course'] = 'Please enter a valid email address';
+        this.msg['email'] = 'Please enter a valid email address';
       } else {
         this.errors.email = false;
-        this.msg['course'] = 'Супер, все вірно';
+        this.msg['email'] = 'Супер, все вірно';
       }
     },
   },

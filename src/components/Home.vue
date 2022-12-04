@@ -11,8 +11,13 @@
     <router-link to="/editdiscipline">Edit Discipline</router-link><br>
     <router-link to="/groups">Groups</router-link><br>
     <router-link to="/addgroup">Add Group</router-link><br>
+    <router-link to="/editgroup">Edit Group</router-link><br>
     <router-link to="/faculties">Faculties</router-link><br>
-    <router-link to="/addfaculty">Add Group</router-link><br>
+    <router-link to="/addfaculty">Add Faculty</router-link><br>
+    <router-link to="/editfaculty">Edit Faculty</router-link><br>
+    <router-link to="/teachers">Teachers</router-link><br>
+    <router-link to="/addteacher">Add Teacher</router-link><br>
+    <router-link to="/editteacher">Edit Teacher</router-link><br>
   </div>
 </template>
 

@@ -15,7 +15,17 @@
           <input type="email" class="form-control" id="student-email"
                  placeholder="Введіть курс групи" v-model="course" @input="validateCourse">
           <small v-if="errors.course" class="error">{{ msg.course}}</small>
-
+        </div>
+        <div class="form-group mb-4">
+          <label for="student-email">Departament-id*</label>
+          <select name="" id="department" class="form-select" v-model="department" @change="checkDepartment">
+            <option value="">Оберіть</option>
+            <option value="ІА-11">ІА-11</option>
+            <option value="ІА-12">ІА-12</option>
+            <option value="ІА-13">ІА-13</option>
+            <option value="ІА-14">ІА-14</option>
+          </select>
+          <small v-if="errors.department" class="error">{{ msg.department}}</small>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -37,10 +47,12 @@ export default defineComponent({
     //змінні компонету
     groupName: '',
     course: '',
+    department: '',
     msg: [],
     errors: {
       groupName: true,
       course: true,
+      department: true,
     },
   }),
   directives: {
@@ -50,7 +62,7 @@ export default defineComponent({
     checkForm: function (event) {
       this.checkName();
       this.validateCourse();
-      this.checkPhone();
+      this.checkDepartment();
       if (!this.errors.groupName && !this.errors.course) {
         alert("Ваші дані прийнято та успішно зареєстровано")
         this.clearForm();
@@ -86,6 +98,14 @@ export default defineComponent({
         this.errors.course = false;
       }
     },
+    checkDepartment() {
+      if (this.department.valueOf() === '') {
+        this.errors.department = true;
+        this.msg['department'] = 'Оберіть групу';
+      } else {
+        this.errors.department = false;
+      }
+    }
   },
 })
 
