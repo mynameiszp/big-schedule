@@ -22,7 +22,6 @@
       <td>Otto</td>
       <td>@mdo</td>
       <td>
-<!--        <a href="#" class="icon-block "><i class="fa-solid fa-pen"></i></a>-->
         <router-link type="button" class="icon-block" to="/editstudent"><i class="fa-solid fa-pen"></i></router-link>
 
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
@@ -35,7 +34,7 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>
-        <a href="#" class="icon-block "><i class="fa-solid fa-pen"></i></a>
+        <router-link type="button" class="icon-block" to="/editstudent"><i class="fa-solid fa-pen"></i></router-link>
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
@@ -46,7 +45,7 @@
       <td>the Bird</td>
       <td>@twitter</td>
       <td>
-        <a href="#" class="icon-block "><i class="fa-solid fa-pen"></i></a>
+        <router-link type="button" class="icon-block" to="/editstudent"><i class="fa-solid fa-pen"></i></router-link>
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
