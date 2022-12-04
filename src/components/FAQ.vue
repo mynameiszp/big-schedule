@@ -1,7 +1,5 @@
 <template>
   <div>
-<!--    <h1>FAQ</h1>-->
-<!--    <router-link to="/">Home</router-link>-->
     <div class="main">
       <div class="container-fluid">
         <div class="box">

@@ -10,6 +10,9 @@ import Disciplines_EDIT from '../components/entities/disciplines/Disciplines_edi
 import Groups from '../components/entities/groups/Groups.vue'
 import Groups_EDIT from '../components/entities/groups/Groups_edit.vue'
 import Groups_ADD from '../components/entities/groups/Groups_add.vue'
+import Faculties from '../components/entities/faculties/Faculties.vue'
+import Faculties_ADD from '../components/entities/faculties/Faculties_add.vue'
+import Faculties_EDIT from '../components/entities/faculties/Faculties_edit.vue'
 
 const routes = [
     {
@@ -55,6 +58,18 @@ const routes = [
     {
         path: '/editgroup',
         component: Groups_EDIT
+    },
+    {
+        path: '/faculties',
+        component: Faculties
+    },
+    {
+        path: '/addfaculty',
+        component: Faculties_ADD
+    },
+    {
+        path: '/editfaculty',
+        component: Faculties_EDIT
     }
 ]
 

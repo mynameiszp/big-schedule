@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="shadow-lg p-3 m-5 bg-white rounded ">
+      <h4 class="text-center">Дисципліни</h4>
       <router-link type="button" class="btn btn-primary" to="/adddiscipline">Add Discipline</router-link>
 
-      <table class="table table-striped text-center">
+      <table class="table table-striped text-center table-responsive">
       <thead>
       <tr>
         <th scope="col">#</th>

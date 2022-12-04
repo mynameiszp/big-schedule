@@ -11,12 +11,13 @@
     <router-link to="/editdiscipline">Edit Discipline</router-link><br>
     <router-link to="/groups">Groups</router-link><br>
     <router-link to="/addgroup">Add Group</router-link><br>
-
+    <router-link to="/faculties">Faculties</router-link><br>
+    <router-link to="/addfaculty">Add Group</router-link><br>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Students"
+  name: "Home"
 }
 </script>

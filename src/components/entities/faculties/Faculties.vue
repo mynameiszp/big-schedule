@@ -1,14 +1,15 @@
 <template>
   <div>
     <div class="shadow-lg p-3 m-5 bg-white rounded ">
-      <h4 class="text-center">Групи</h4>
-      <router-link type="button" class="btn btn-primary" to="/addgroup">Add Group</router-link>
-      <table class="table table-striped text-center">
+      <h4 class="text-center">Факультети</h4>
+      <router-link type="button" class="btn btn-primary" to="/addfaculty">Add Discipline</router-link>
+
+      <table class="table table-striped text-center table-responsive">
       <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Назва</th>
-        <th scope="col">Курс</th>
+        <th scope="col">Коротка назва</th>
         <th scope="col">Редагування/Видалення</th>
       </tr>
     </thead>
@@ -16,28 +17,29 @@
     <tr>
       <th scope="row">1</th>
       <td>Mark</td>
-      <td>@mdo</td>
+      <td>Mark</td>
       <td>
-        <router-link type="button" class="icon-block" to="/editgroup"><i class="fa-solid fa-pen"></i></router-link>
-
+        <router-link type="button" class="icon-block" to="/editfaculty"><i class="fa-solid fa-pen"></i></router-link>
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
-      <td>@fat</td>
+      <td>Mark</td>
+
       <td>
-        <router-link type="button" class="icon-block" to="/editgroup"><i class="fa-solid fa-pen"></i></router-link>
+        <router-link type="button" class="icon-block" to="/editfaculty"><i class="fa-solid fa-pen"></i></router-link>
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Larry</td>
-      <td>@twitter</td>
+      <td>Mark</td>
+
       <td>
-        <router-link type="button" class="icon-block" to="/editgroup"><i class="fa-solid fa-pen"></i></router-link>
+        <router-link type="button" class="icon-block" to="/editfaculty"><i class="fa-solid fa-pen"></i></router-link>
         <a href="#" class="icon-block mx-4"><i class="fa-solid fa-trash"></i></a>
       </td>
     </tr>
@@ -49,6 +51,6 @@
 
 <script>
 export default {
-  name: "Groups"
+  name: "Faculties"
 }
 </script>

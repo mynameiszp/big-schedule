@@ -81,10 +81,10 @@ export default defineComponent({
     checkName() {
       if (this.studentName.length === 0) {
         this.errors.studentName = true;
-        this.msg['disciplineName'] = 'Прізвище не може бути пустим';
+        this.msg['facultyName'] = 'Прізвище не може бути пустим';
       } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.studentName)) {
         this.errors.studentName = true;
-        this.msg['disciplineName'] = 'Прізвище тільки українською';
+        this.msg['facultyName'] = 'Прізвище тільки українською';
       } else {
         this.errors.studentName = false;
       }
