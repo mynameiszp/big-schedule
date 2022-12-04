@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="shadow-lg p-3 m-5 bg-white rounded ">
-      <h4 class="text-center">Додавання нового студента</h4>
+      <h4 class="text-center">Редагування студента</h4>
       <form action="#" id="form" method="post" @submit.prevent="checkForm">
         <div class="form-group m-1 mb-4">
           <label for="student-name">Імя*</label><br>
@@ -42,7 +42,7 @@ import {defineComponent} from 'vue'
 import {mask} from 'vue-the-mask'
 
 export default defineComponent({
-  name: "Students_ADD",
+  name: "Students_EDIT",
   data: () => ({
     //змінні компонету
     studentName: '',
