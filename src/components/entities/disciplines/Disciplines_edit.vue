@@ -33,7 +33,7 @@ export default defineComponent({
     disciplineName: '',
     msg: [],
     errors: {
-      studentName: true,
+      disciplineName: true,
     },
   }),
   directives: {
@@ -57,13 +57,13 @@ export default defineComponent({
 
     checkName() {
       if (this.disciplineName.length === 0) {
-        this.errors.studentName = true;
+        this.errors.disciplineName = true;
         this.msg['disciplineName'] = 'Прізвище не може бути пустим';
       } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.disciplineName)) {
-        this.errors.studentName = true;
+        this.errors.disciplineName = true;
         this.msg['disciplineName'] = 'Прізвище тільки українською';
       } else {
-        this.errors.studentName = false;
+        this.errors.disciplineName = false;
       }
     },
   },

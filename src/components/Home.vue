@@ -9,6 +9,9 @@
     <router-link to="/disciplines">Disciplines</router-link><br>
     <router-link to="/adddiscipline">Add Discipline</router-link><br>
     <router-link to="/editdiscipline">Edit Discipline</router-link><br>
+    <router-link to="/groups">Groups</router-link><br>
+    <router-link to="/addgroup">Add Group</router-link><br>
+
   </div>
 </template>
 

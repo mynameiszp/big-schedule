@@ -4,9 +4,9 @@
       <h4 class="text-center">Додавання нової дисципліни</h4>
       <form action="#" id="form" method="post" @submit.prevent="checkForm">
         <div class="form-group m-1 mb-4">
-          <label for="student-name">Назва*</label><br>
+          <label for="discipline-name">Назва*</label><br>
           <small id="name-describe" class="form-text text-muted">Тільки українською</small>
-          <input type="text" class="form-control" id="student-name" aria-describedby="name-describe"
+          <input type="text" class="form-control" id="discipline-name" aria-describedby="name-describe"
                  placeholder="Введіть назву дисципліни" v-model="disciplineName" @input="checkName">
           <small v-if="errors.disciplineName" class="error">{{ msg.disciplineName }}</small>
         </div>
@@ -33,7 +33,7 @@ export default defineComponent({
     disciplineName: '',
     msg: [],
     errors: {
-      studentName: true,
+      disciplineName: true,
     },
   }),
   directives: {
@@ -57,13 +57,13 @@ export default defineComponent({
 
     checkName() {
       if (this.disciplineName.length === 0) {
-        this.errors.studentName = true;
+        this.errors.disciplineName = true;
         this.msg['disciplineName'] = 'Прізвище не може бути пустим';
       } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.disciplineName)) {
-        this.errors.studentName = true;
+        this.errors.disciplineName = true;
         this.msg['disciplineName'] = 'Прізвище тільки українською';
       } else {
-        this.errors.studentName = false;
+        this.errors.disciplineName = false;
       }
     },
   },

@@ -103,13 +103,13 @@ export default defineComponent({
     validateEmail() {
       if (this.email.length === 0) {
         this.errors.email = true;
-        this.msg['email'] = 'Пусто';
+        this.msg['course'] = 'Пусто';
       } else if (!/\S+@\S+\.\S+/.test(this.email)) {
         this.errors.email = true;
-        this.msg['email'] = 'Please enter a valid email address';
+        this.msg['course'] = 'Please enter a valid email address';
       } else {
         this.errors.email = false;
-        this.msg['email'] = 'Супер, все вірно';
+        this.msg['course'] = 'Супер, все вірно';
       }
     },
   },
