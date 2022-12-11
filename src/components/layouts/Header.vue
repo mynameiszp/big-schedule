@@ -24,7 +24,7 @@
 export default {
   name: "Header"
 }
-const insertScript = document.createElement('script')
-insertScript.setAttribute('src', 'url_of_your_script')
-document.body.appendChild(insertScript)
+// const insertScript = document.createElement('script')
+// insertScript.setAttribute('src', 'url_of_your_script')
+// document.body.appendChild(insertScript)
 </script>

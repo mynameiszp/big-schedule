@@ -42,7 +42,7 @@ import {defineComponent} from 'vue'
 
 // import 'vue-select/dist/vue-select.css'
 export default defineComponent({
-  name: "FAQS_ADD",
+  name: "FAQs_ADD",
   data: () => ({
     //змінні компонету
     question: '',

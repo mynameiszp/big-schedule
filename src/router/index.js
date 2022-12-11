@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router/dist/vue-router.esm-bundler'
 import Home from '../components/Home.vue'
-import FAQ from '../components/FAQ.vue'
-// import FAQs_ADD from '../components/FAQs_add'
-
-// import FAQS_EDIT from '../components/entities/faqs/FAQs_edit'
+import FAQ from '../components/entities/faqs/FAQ.vue'
+import FAQs_ADD from '../components/entities/faqs/FAQs_add.vue'
+import FAQs_EDIT from '../components/entities/faqs/FAQs_edit.vue'
 import Students from '../components/entities/students/Students.vue'
 import Students_ADD from '../components/entities/students/Students_add.vue'
 import Students_EDIT from '../components/entities/students/Students_edit.vue'
@@ -29,14 +28,14 @@ const routes = [
         path: '/faq',
         component: FAQ
     },
-    // {
-    //     path: '/addfaq',
-    //     component: FAQs_ADD
-    // },
-    // {
-    //     path: '/editfaq',
-    //     component: FAQS_EDIT
-    // } ,
+    {
+        path: '/addfaq',
+        component: FAQs_ADD
+    },
+    {
+        path: '/editfaq',
+        component: FAQs_EDIT
+    } ,
     {
         path: '/students',
         component: Students

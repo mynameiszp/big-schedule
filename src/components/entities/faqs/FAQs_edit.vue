@@ -40,8 +40,8 @@
 
 <script>
 import {defineComponent} from 'vue'
+import {mask} from 'vue-the-mask'
 
-// import 'vue-select/dist/vue-select.css'
 export default defineComponent({
   name: "FAQS_EDIT",
   data: () => ({
