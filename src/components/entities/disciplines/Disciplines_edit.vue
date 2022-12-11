@@ -58,10 +58,10 @@ export default defineComponent({
     checkName() {
       if (this.disciplineName.length === 0) {
         this.errors.disciplineName = true;
-        this.msg['facultyName'] = 'Прізвище не може бути пустим';
+        this.msg['disciplineName'] = 'Прізвище не може бути пустим';
       } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.disciplineName)) {
         this.errors.disciplineName = true;
-        this.msg['facultyName'] = 'Прізвище тільки українською';
+        this.msg['disciplineName'] = 'Прізвище тільки українською';
       } else {
         this.errors.disciplineName = false;
       }
