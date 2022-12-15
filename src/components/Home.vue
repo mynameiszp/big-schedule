@@ -19,6 +19,9 @@
     <router-link to="/addteacher">Add Teacher</router-link><br>
     <router-link to="/editteacher">Edit Teacher</router-link><br>
     <router-link to="/departaments">Departaments</router-link><br>
+    <router-link to="/addschedule">Add Schedule</router-link><br>
+    <router-link to="/editschedule">Edit Schedule</router-link><br>
+    <router-link to="/schedules">Schedule</router-link><br>
 
   </div>
 </template>

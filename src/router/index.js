@@ -21,6 +21,9 @@ import Teachers_EDIT from '../components/entities/teachers/Teachers_edit.vue'
 import Departaments from '../components/entities/departments/Departments.vue'
 import Departments_ADD from '../components/entities/departments/Departments_add.vue'
 import Departments_EDIT from '../components/entities/departments/Departments_edit.vue'
+import Schedules_ADD  from '../components/entities/schedule/Schedules_add.vue'
+import Schedules_EDIT  from '../components/entities/schedule/Schedules_edit.vue'
+import Schedules  from '../components/entities/schedule/Schedules.vue'
 
 const routes = [
     {
@@ -110,7 +113,20 @@ const routes = [
     {
         path: '/editdepartment',
         component: Departments_EDIT
+    },
+    {
+        path: '/schedules',
+        component: Schedules
+    },
+    {
+        path: '/addschedule',
+        component: Schedules_ADD
+    },
+    {
+        path: '/editschedule',
+        component: Schedules_EDIT
     }
+
 ]
 
 export default () => createRouter({
