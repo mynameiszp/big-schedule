@@ -61,15 +61,6 @@
         max-width: 100%;
     }
 
-    form .user-details .input-box {
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    .content form .user-details {
-        max-height: 300px;
-        overflow-y: scroll;
-    }
 }
 
 /* Extra Small Devices, Phones */
