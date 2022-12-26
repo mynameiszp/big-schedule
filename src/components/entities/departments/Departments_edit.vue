@@ -6,14 +6,14 @@
         <div class="form-group m-1 mb-4">
           <label for="faculty-name">Назва повністю*</label><br>
           <small id="name-describe" class="form-text text-muted">Тільки українською</small>
-          <input type="text" class="form-control" id="faculty-name" aria-describedby="name-describe"
+          <input type="text" class="form-control" id="department-name" aria-describedby="name-describe"
                  placeholder="Введіть повну назву департаменту" v-model="departmentName" @input="checkName">
           <small v-if="errors.departmentName" class="error">{{ msg.departmentName }}</small>
         </div>
         <div class="form-group m-1 mb-4">
           <label for="faculty-shortname">Назва коротко*</label><br>
           <small id="name-describe" class="form-text text-muted">Тільки українською, великі букви</small>
-          <input type="text" class="form-control" id="faculty-shortname" aria-describedby="name-describe"
+          <input type="text" class="form-control" id="department-shortname" aria-describedby="name-describe"
                  placeholder="Введіть коротку назву департаменту" v-model="departmentshortName" @input="checkShortName">
           <small v-if="errors.departmentshortName" class="error">{{ msg.departmentshortName }}</small>
         </div>
@@ -27,10 +27,6 @@
             <option value="ІА-14">ІА-14</option>
           </select>
           <small v-if="errors.faculty" class="error">{{ msg.faculty}}</small>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

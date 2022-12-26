@@ -17,21 +17,6 @@
                  placeholder="Введіть курс групи" v-model="answer" @input="validateAnswer">
           <small v-if="errors.answer" class="error">{{ msg.answer}}</small>
         </div>
-        <div class="form-group mb-4">
-          <label for="faculty">Faculty-id*</label>
-          <select name="" id="faculty" class="form-select" v-model="faculty" @change="checkFaculty">
-            <option value="">Оберіть</option>
-            <option value="ІА-11">ІА-11</option>
-            <option value="ІА-12">ІА-12</option>
-            <option value="ІА-13">ІА-13</option>
-            <option value="ІА-14">ІА-14</option>
-          </select>
-          <small v-if="errors.faculty" class="error">{{ msg.faculty}}</small>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>

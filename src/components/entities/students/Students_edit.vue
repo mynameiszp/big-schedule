@@ -28,7 +28,7 @@
         <div class="form-group mb-4">
           <label for="student-email">Group-id*</label>
           <select name="" id="group" class="form-select" v-model="group" @change="checkGroup">
-            <option value="">Оберіть</option>
+            <option value="">Оберіть групу</option>
             <option value="ІА-11">ІА-11</option>
             <option value="ІА-12">ІА-12</option>
             <option value="ІА-13">ІА-13</option>

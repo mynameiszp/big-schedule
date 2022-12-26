@@ -14,20 +14,20 @@
           <label for="faculty-shortname">Час*</label><br>
           <small id="name-describe" class="form-text text-muted">Тільки українською, великі букви</small>
           <input type="time" class="form-control" id="schedule-time" aria-describedby="name-describe"
-                 placeholder="Введіть коротку назву департаменту" v-model="scheduletime" @input="checkTime">
+                 placeholder="Введіть назначений час" v-model="scheduletime" @input="checkTime">
           <small v-if="errors.scheduletime" class="error">{{ msg.scheduletime }}</small>
         </div>
         <div class="form-group m-1 mb-4">
           <label for="faculty-shortname">Classroom*</label><br>
           <small id="name-describe" class="form-text text-muted">Тільки цифри</small>
           <input type="text" class="form-control" id="classroom" aria-describedby="name-describe"
-                 placeholder="Введіть classroom" v-model="classroom" @input="checkClassroom">
+                 placeholder="Введіть назначений клас" v-model="classroom" @input="checkClassroom">
           <small v-if="errors.classroom" class="error">{{ msg.classroom }}</small>
         </div>
         <div class="form-group mb-4">
           <label for="teacher">Teacher-id*</label>
           <select name="" id="faculty" class="form-select" v-model="teacher" @change="checkTeacher">
-            <option value="">Оберіть</option>
+            <option value="">Оберіть викладача</option>
             <option value="ІА-11">ІА-11</option>
             <option value="ІА-12">ІА-12</option>
             <option value="ІА-13">ІА-13</option>
@@ -38,7 +38,7 @@
         <div class="form-group mb-4">
           <label for="teacher">Discipline-id*</label>
           <select name="" id="faculty" class="form-select" v-model="discipline" @change="checkDiscipline">
-            <option value="">Оберіть</option>
+            <option value="">Оберіть дисципліну</option>
             <option value="ІА-11">ІА-11</option>
             <option value="ІА-12">ІА-12</option>
             <option value="ІА-13">ІА-13</option>
@@ -49,7 +49,7 @@
         <div class="form-group mb-4">
           <label for="student-email">Group-id*</label>
           <select name="" id="group" class="form-select" v-model="group" @change="checkGroup">
-            <option value="">Оберіть</option>
+            <option value="">Оберіть групу</option>
             <option value="ІА-11">ІА-11</option>
             <option value="ІА-12">ІА-12</option>
             <option value="ІА-13">ІА-13</option>

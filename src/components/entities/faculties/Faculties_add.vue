@@ -17,10 +17,6 @@
                  placeholder="Введіть коротку назву факультету" v-model="facultyShortName" @input="checkShortName">
           <small v-if="errors.facultyShortName" class="error">{{ msg.facultyShortName }}</small>
         </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>

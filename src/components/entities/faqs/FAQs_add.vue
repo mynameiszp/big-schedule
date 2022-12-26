@@ -4,32 +4,18 @@
       <h4 class="text-center">Додавання нового частого питання</h4>
       <form action="#" id="form" method="post" @submit.prevent="checkForm">
         <div class="form-group m-1 mb-4">
-          <label for="question">Назва*</label><br>
-          <small id="name-describe" class="form-text text-muted">Формат: ІА-12 </small>
+          <label for="question">Питання*</label><br>
+          <small id="name-describe" class="form-text text-muted">Не більше 100 символів </small>
           <input type="text" class="form-control" id="question" aria-describedby="name-describe"
-                 placeholder="Введіть назву групи" v-model="question" @input="checkQuestion">
+                 placeholder="Введіть питання" v-model="question" @input="checkQuestion">
           <small v-if="errors.question" class="error">{{ msg.question }}</small>
         </div>
         <div class="form-group mb-4">
-          <label for="answer">Курс*</label>
+          <label for="answer">Відповідь*</label><br>
+          <small id="name-describe" class="form-text text-muted">Не більше 300 символів </small>
           <input type="text" class="form-control" id="answer"
-                 placeholder="Введіть курс групи" v-model="answer" @input="validateAnswer">
+                 placeholder="Введіть відповідь" v-model="answer" @input="validateAnswer">
           <small v-if="errors.answer" class="error">{{ msg.answer}}</small>
-        </div>
-        <div class="form-group mb-4">
-          <label for="faculty">Faculty-id*</label>
-          <select name="" id="faculty" class="form-select" v-model="faculty" @change="checkFaculty">
-            <option value="">Оберіть</option>
-            <option value="ІА-11">ІА-11</option>
-            <option value="ІА-12">ІА-12</option>
-            <option value="ІА-13">ІА-13</option>
-            <option value="ІА-14">ІА-14</option>
-          </select>
-          <small v-if="errors.faculty" class="error">{{ msg.faculty}}</small>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -96,14 +82,6 @@ export default defineComponent({
         this.msg['answer'] = 'Відповідь завелика';
       } else {
         this.errors.answer = false;
-      }
-    },
-    checkFaculty() {
-      if (this.faculty.valueOf() === '') {
-        this.errors.faculty = true;
-        this.msg['faculty'] = 'Оберіть факультет';
-      } else {
-        this.errors.faculty = false;
       }
     }
   },
