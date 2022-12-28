@@ -82,6 +82,7 @@ export default defineComponent({
         this.clearForm();
       } else {
         alert("Форма не прийнята... Перевірте ваші дані, виправте та надішліть ще раз ")
+        console.log(this.errors.studentName)
       }
     },
     clearForm() {
@@ -95,10 +96,10 @@ export default defineComponent({
     checkName() {
       if (this.studentName.length === 0) {
         this.errors.studentName = true;
-        this.msg['teacherName'] = 'Прізвище не може бути пустим';
-      } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(this.studentName)) {
+        this.msg['studentName'] = 'Прізвище не може бути пустим';
+      } else if (!/^[а-щА-ЩЬьЮюЯяЇїІіЄєҐґ\s*]+$/.test(this.studentName)) {
         this.errors.studentName = true;
-        this.msg['teacherName'] = 'Прізвище тільки українською';
+        this.msg['studentName'] = 'Прізвище тільки українською';
       } else {
         this.errors.studentName = false;
       }
